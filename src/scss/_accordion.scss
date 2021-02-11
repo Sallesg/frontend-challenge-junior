@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+  // .js-accordion div {
+  //   display: none;
+  // }
+
+  // .js-accordion h4:after {
+  //   content: '↴';
+  //   margin-left: 10px;
+  // }
+
+  // .js-accordion h4.ativo:after {
+  //   content: '↰';
+  // }
+
+  // .js-accordion div.ativo {
+  //   display: block;
+  //   animation: slideDown 0.5s forwards;
+  // }
+
+  .js-accordion dd {
+    display: none;
+  }
+
+  .js-accordion dt:after {
+    content: '↴';
+    margin-left: 10px;
+  }
+
+  .js-accordion dt.ativo:after {
+    content: '↰';
+  }
+
+  .js-accordion dd.ativo {
+    display: block;
+    animation: slideDown 0.5s forwards;
+  }
+}

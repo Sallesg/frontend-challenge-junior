@@ -1,0 +1,81 @@
+header {
+  width: 100%;
+  height: 80px;
+  background-color: $color-extra;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  position: fixed;
+  box-shadow: 0 3px 5px $tertiary-bg-color;
+  z-index: 99;
+  .inner-logo {
+    cursor: pointer;
+    font-size: 3rem;
+    &::after {
+      content: 'riano ';
+      color: $tertiary-text-color;
+      opacity: 0.6;
+      margin-left: 0.2rem;
+      letter-spacing: 0.15rem;
+    }
+  }
+
+  .menu-links {
+    li {
+      display: inline-block;
+      padding: 0px 20px 4px;
+      transition: all 0.3s ease 0s;
+
+      a {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      &:hover {
+        // border-bottom: 1px solid $tertiary-bg-color;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    .icon {
+      margin-left: 7px;
+      padding: 0 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  /******* MEDIA QUERY *******/
+  @media screen and (max-width: 768px) {
+    .menu-container {
+      order: -1;
+    }
+    .out-logo {
+      margin-left: 45px;
+    }
+  }
+}
+
+/******* MEDIA QUERY *******/
+@media screen and (max-width: 425px) {
+  header {
+    padding: 5px 0;
+    .out-logo {
+      margin-left: 5px;
+    }
+    .icons {
+      margin-right: 5px;
+      .icon {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+[data-menu='button'] {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .js [data-menu='button'] {
+    display: flex;
+    align-items: center;
+    background: $tertiary-bg-color;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    font-weight: 700;
+    color: $secondary-text-color;
+    cursor: pointer;
+    margin: 10px;
+    position: relative;
+    z-index: 300;
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 2px;
+      width: 12px;
+      background: $secondary-text-color;
+      box-shadow: 0 4px $primary-bg-color, 0 -4px $primary-bg-color;
+      margin-right: 4px;
+      transition: transform 0.3s;
+    }
+  }
+
+  .js [data-menu='button'].active::before {
+    transform: rotate(90deg);
+  }
+
+  .js [data-menu='list'] {
+    display: none;
+    position: absolute;
+    background: $color-extra;
+    width: 160px;
+    z-index: 200px;
+    top: 0;
+    padding: 60px 0 20px 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .js [data-menu='list'].active {
+    display: block;
+    animation: show-right 0.3s forwards;
+  }
+
+  @keyframes show-right {
+    from {
+      opacity: 0;
+      transform: translate3d(-30px, 0px, 0px);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

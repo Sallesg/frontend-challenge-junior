@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script>
+      document.documentElement.className += ' js'
+    </script>
+    <title>VNDA Challenge</title>
+  </head>
+  <body>
+    <header>
+      <div class="out-logo">
+        <a class="inner-logo">Ad.</a>
+      </div>
+      <nav class="menu-container">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+        <ul class="menu-links" data-menu="list" id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li data-dropdown>
+            <a href="#">About</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">A empresa</a></li>
+              <li><a href="#">Equipe</a></li>
+              <li><a href="#">Sócios</a></li>
+              <li><a href="#">Investidores</a></li>
+            </ul>
+          </li>
+          <li><a href="#">blog</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <a class="icon" href="#" ><img src="img/search.png"></img></a>
+        <a class="icon" href="#" data-modal="open"><img src="img/login.png"></img></a>
+        <a class="icon" href="#"><img src="img/bag.png"></img></a>
+      </div>
+    </header>
+    <main class="wrapper">
+      <section class="main-banner">
+        <div class="container">
+          <div class="carousel">
+            <a>
+              <img src="https://picsum.photos/1920/600" alt="">
+            </a>
+          </div>             
+        </div>
+      </section >
+      <section class="promotions">
+        <div class="wrapper-container">
+        <div class="title">
+          <h1 class="all-titles">Offers</h1>
+        </div>
+        <div class="categories">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/130/130">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/130/130">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/130/130">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://picsum.photos/130/130">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="show-room js-scroll">
+        <div class="wrapper-container">
+          <span></span>
+          <div class="texts">
+            <div>
+              <small>Lorem ipsum lorem dolor</small>
+              <h2>Lorem ipsum </br> 
+                  dolor sit amet
+              </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur </br> 
+                adipiscing elit. Nam sed rhoncus odio. </br>
+                Donec ac libero vitae eros vestibulum </br>
+                laoreet sed fermentum massa. Etiam hendrerit </br>
+                turpis felis, nec porta ante pellentesque </br>
+                quis. Duis vestibulum cursus placerat.
+              </p>
+            </div>
+            <div class="tag">
+              <span class="bounce">↓</span>
+            </div>
+          </div>
+            <div class="middle-image">
+            <img src="https://picsum.photos/450/480">
+            <div>
+              <h3>Banner title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur </br>
+                adipiscing elit, sed do eiusmod tempo.
+              </p>
+            </div>
+          </div>
+            <div class="end-image">
+            <div class="end-elements">
+              <img src="https://picsum.photos/450/280">
+              <div class="other-color-bg">
+                <h3>Banner title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur </br>
+                  adipiscing elit, sed do eiusmod tempo.
+                </p>
+              </div>
+            </div>
+            <div class="end-elements">
+              <img src="https://picsum.photos/450/480">
+              <div>
+                <h3>Banner title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur </br>
+                    adipiscing elit, sed do eiusmod tempo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter js-scroll">
+        <div class="wrapper-container">
+        <div class="box-size">
+          <span></span>
+          <div class="container-start">
+            <a href="#"><img src="https://picsum.photos/200/280" ></a>
+            <div>
+              <small>Lorem ipsum lorem dolor</small>
+              <h2>Lorem ipsum </br> 
+                  dolor sit amet
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur </br> 
+                adipiscing elit. Nam sed rhoncus odio. </br>
+                Donec ac libero vitae eros vestibulum </br>
+                laoreet sed fermentum massa. Etiam </br> hendrerit 
+                turpis felis, nec porta ante </br>pellentesque 
+                quis. Duis vestibulum </br>cursus placerat.
+              </p>
+              <button class="btn-flip" data-back="Read more ↑ " data-front="Call to action ↓">
+              </button>
+            </div>
+          </div>
+          <div class="container-end">
+            <a href="#"><img src="https://picsum.photos/425/250" ></a>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="social-media js-scroll">
+        <div class="wrapper-container">
+        <div>
+          <h2>@instadamarca</h2>
+        </div>
+        <div class="media-photos">
+          <a href="#"><img src="https://picsum.photos/300/300" ></a>
+          <div class="key-card">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nam sed rhoncus odio.
+              Donec ac libero vitae eros vestibulum
+              laoreet sed fermentum massa. Etiam
+              hendrerit turpis felis, nec porta ante
+              pellentesque quis. Duis vestibulum
+              cursus placerat.
+            </p>
+          </div>
+          <a href="#"><img src="https://picsum.photos/300/300" ></a>
+        </div>
+      </div>
+      </section>
+       <footer>
+        <div class="wrapper-container">
+        <div class="top-footer">
+          <a class="inner-logo">Ad.</a>
+        </div>
+        <div class="middle-footer">
+          <div class="menu-footer">
+            
+            <div class="footer-title">
+              <h4>Menu</h4>
+            </div>
+            <div class="footer-list">
+              <ul>
+                <li>Submenu</li>
+                <li>Submenu</li>
+              </ul>
+              <ul>
+                <li>Submenu</li>
+                <li>Submenu</li>
+              </ul>
+            </div>
+          </div> 
+          <div class="menu-footer">
+            <div class="footer-title">
+              <h4>Menu</h4>
+            </div>
+            <div class="email">
+              <input placeholder="Email">              
+              </input>
+              <button class="design">Send ></button> 
+            </div>          
+          </div> 
+          <div class="menu-footer">
+            <div class="footer-title">
+              <h4>Menu</h4>
+            </div>
+            <div class="icon-media">
+                
+              <a href="https://www.facebook.com/adriano.salles.12" target="_blank"><img src="./img/face.png"></a>
+              <a href="#">Submenu</a>
+            </div>
+            <div class="icon-media">
+              <a href="https://www.instagram.com/adriano_g_salles/" target="_blank"><img src="./img/insta.png"></a>
+              <a href="#">Submenu</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>@Vnda - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</p>
+        </div>
+      </div>
+      </footer>
+    </main>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="close" class="close">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="text" for="email" id="email">
+          <label for="password">Password</label>
+          <input type="text" for="password" id="password">
+          <button type="submit">Sign in</button>
+        </form>
+      </div>
+    </section>
+
+    <script type="module" src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
