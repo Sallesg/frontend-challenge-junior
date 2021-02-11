@@ -1,6 +1,6 @@
 # Frontend challenge jr - VNDA
 
-este para a vaga de front end júnior
+Link para o site [vnda](https://vnda-challenge.vercel.app/).
 
 ## Installation:
 
